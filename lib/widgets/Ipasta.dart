@@ -4,15 +4,15 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Itemcon extends StatelessWidget {
+class Ipasta extends StatelessWidget {
   var burger = [
     " ",
     "Cheese Burger",
     "Maxican Burger",
     "Veg Burger",
-    "Regular Burger"
+    "Regular Burger","","",""
   ];
-  var bprice = ["", "150", "170", "120", "80"];
+  var bprice = ["", "150", "170", "120", "80","","",""];
 
   String bicon="";
 
@@ -24,7 +24,7 @@ class Itemcon extends StatelessWidget {
       shrinkWrap: true,
       childAspectRatio: 0.76,
       children: [
-        for (int i = 1; i < 5; i++)
+        for (int i = 1; i <7 ; i++)
           Container(
             padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             margin: EdgeInsets.symmetric(horizontal: 15, vertical: 8),
@@ -46,7 +46,7 @@ class Itemcon extends StatelessWidget {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "assets/burger/$i.png",
+                      "assets/pizza/pa$i.png",
                       width: 120,
                       height: 120,
                       fit: BoxFit.cover,

@@ -4,7 +4,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Itemcon extends StatelessWidget {
+class Icold extends StatelessWidget {
   var burger = [
     " ",
     "Cheese Burger",
@@ -46,7 +46,7 @@ class Itemcon extends StatelessWidget {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "assets/burger/$i.png",
+                      "assets/pizza/c$i.png",
                       width: 120,
                       height: 120,
                       fit: BoxFit.cover,

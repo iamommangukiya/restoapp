@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'Homepage.dart';
+import 'pages/Homepage.dart';
+import 'pages/Login_page.dart';
+import 'pages/creat_page.dart';
+import 'pages/lo_cre_acc.dart';
 
 void main() {
   runApp(Myapp());
@@ -16,17 +19,17 @@ class Myapp extends StatefulWidget {
 
 class _MyappState extends State<Myapp> {
   @override
-  void initState() {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
-    // TODO: implement initState
-    super.initState();
-  }
+  // void initState() {
+  //   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+  //   // TODO: implement initState
+  //   super.initState();
+  // }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Homepage(),
+      home: Cr_lo_page(),
     );
   }
 }
